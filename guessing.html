@@ -1,0 +1,19 @@
+<script>
+
+    let randomNum = Math.floor(Math.random() * 100) + 1
+    let guess;
+    guess = prompt("Guess a number, 1 to 100.")
+
+    while (guess != randomNum) {
+        if (guess > randomNum) {
+            guess = prompt(guess + " was too high! Try again: ")
+        } else if (guess < randomNum) {
+            guess = prompt(guess + " was too low! Try again: ")
+        } else {
+            guess = prompt("Invalid input")
+        }
+    }
+
+    alert("Good job, you guessed the number " + randomNum + "!")
+
+</script>
